@@ -1,9 +1,10 @@
 import os
 from datetime import datetime
 
-def obter_resposta(texto: str) -> str:
+def obter_resposta(texto: str) -> str: # Função para obter a resposta
     comando: str = texto.lower()
 
+'''
     if comando in ('olá', 'boa tarde', 'bom dia'):
         return 'Olá tudo bem!'
     if comando == 'como estás':
@@ -20,8 +21,8 @@ def obter_resposta(texto: str) -> str:
         return f'Hoje é dia: {datetime.now():%d-%m-%Y}'
 
     return f'Desculpa, não entendi a questão! {texto}'
+'''
 
-"""
     respostas = {
         ('olá', 'boa tarde', 'bom dia'): 'Olá tudo bem!',
         'como estás': 'Estou bem, obrigado!',
@@ -46,9 +47,10 @@ def obter_resposta(texto: str) -> str:
         return f'Hoje é dia: {datetime.now():%d-%m-%Y}'
 
     return f'Desculpa, não entendi a questão! {texto}'
-"""
+# A função chat() irá perguntar ao usuário como se chama, iniciar o chat, e responder à perguntas
+# Enquanto o usuário não digitar "bye", ele perguntará ao bot uma pergunta.
 
-
+#FUnção para iniciar o chat
 def chat() -> None:
     print('Bem-vindo ao ChatBot!')
     print('Escreva "bye" para sair do chat')
